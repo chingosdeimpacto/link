@@ -1,283 +1,203 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chingos de Impacto | Enlaces</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --color-red: #df5e52;
-            --color-teal: #2b706e;
-            --color-blue: #5287ae;
-            --color-lavender: #a8a4c9;
-            --color-orange: #f1a54c;
-            --color-dark: #010101;
-        }
-        
-        body {
-            font-family: 'Rubik', sans-serif;
-            background-color: #ffffff;
-            color: var(--color-dark);
-            -webkit-font-smoothing: antialiased;
-        }
-
-        h1, h2, h3, .font-main {
-            font-family: 'Fredoka', sans-serif;
-        }
-
-        .btn-impacto {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 2px solid transparent;
-            position: relative;
-        }
-
-        .btn-impacto:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .bg-red-cdi { background-color: var(--color-red); }
-        .bg-teal-cdi { background-color: var(--color-teal); }
-        .bg-blue-cdi { background-color: var(--color-blue); }
-        .bg-lavender-cdi { background-color: var(--color-lavender); }
-        .bg-orange-cdi { background-color: var(--color-orange); }
-        
-        /* Estilo para los contadores "escondidos" (blanco sobre blanco) */
-        .hidden-counter {
-            color: #ffffff;
-            font-size: 10px;
-            user-select: none;
-            pointer-events: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chingos de Impacto | Enlaces</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--r:#df5e52;--t:#2b706e;--b:#5287ae;--l:#a8a4c9;--o:#f1a54c}
+body{font-family:'Rubik',sans-serif;background:#fff;color:#010101;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.ff{font-family:'Fredoka',sans-serif}
+.btn{transition:transform .25s cubic-bezier(.4,0,.2,1),box-shadow .25s;border:2px solid transparent}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px -4px rgba(0,0,0,.12)}
+.ico{background:rgba(255,255,255,.2);padding:8px;border-radius:12px;margin-right:14px;flex-shrink:0}
+</style>
 </head>
-<body class="flex flex-col items-center min-h-screen p-6">
+<body style="display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:24px 16px">
 
-    <!-- Header / Logo Section -->
-    <header class="w-full max-w-2xl flex flex-col items-center mt-4 mb-8 text-center">
-        <div class="w-full max-w-[220px] mb-6 px-4">
-            <img src="https://chingosdeimpacto.com/assets/logos/color-logo-53bc89dc.png" alt="Chingos de Impacto - Empresa B" class="w-full h-auto">
-        </div>
-        
-        <div class="mb-4">
-            <h1 class="text-xl md:text-2xl font-bold tracking-tight text-zinc-900 uppercase">
-                CONSULTORA DE INNOVACIÓN SOCIAL & <span class="text-red-cdi">TECH4GOOD</span>
-            </h1>
-            <h2 class="text-sm md:text-base font-semibold text-zinc-500 tracking-[0.15em] uppercase mt-1">
-                Empresa B Certificada
-            </h2>
-        </div>
-        
-        <p class="text-zinc-600 text-sm md:text-base leading-relaxed max-w-xl px-2">
-            Co-diseñamos proyectos de innovación social para reducir brechas de desigualdad en educación, emprendimiento y empleabilidad.
-        </p>
-    </header>
+<header style="width:100%;max-width:480px;display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:8px;margin-bottom:32px">
+  <img src="https://chingosdeimpacto.com/assets/logos/color-logo-53bc89dc.png" alt="Chingos de Impacto" style="width:220px;margin-bottom:20px" crossorigin="anonymous" referrerpolicy="no-referrer" onerror="this.style.display='none';document.getElementById('logo-text').style.display='block'">
+  <div id="logo-text" style="display:none;margin-bottom:20px">
+    <span class="ff" style="font-size:2rem;font-weight:700;color:#df5e52">CHINGOS</span>
+    <span class="ff" style="font-size:2rem;font-weight:700;color:#2b706e"> DE IMPACTO</span>
+  </div>
+  <h1 class="ff" style="font-size:1.15rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#111;margin:0 0 4px">
+    Consultora de Innovación Social &amp; <span style="color:var(--b)">Tech4Good</span>
+  </h1>
+  <p style="font-size:.72rem;font-weight:500;text-transform:uppercase;letter-spacing:.18em;color:#888;margin:0 0 12px">Empresa B Certificada</p>
+  <p style="font-size:.875rem;line-height:1.6;color:#555;max-width:400px;margin:0">
+    Co-diseñamos proyectos de innovación social para reducir brechas de desigualdad en educación, emprendimiento y empleabilidad.
+  </p>
+</header>
 
-    <!-- Enlaces Principales -->
-    <main class="w-full max-w-md space-y-4">
-        
-        <div class="flex items-center space-x-2">
-            <a href="https://chimbot.chingosdeimpacto.com" target="_blank" onclick="trackClick('privilegiometro')"
-               class="btn-impacto flex-grow p-4 rounded-2xl flex items-center bg-lavender-cdi text-white">
-                <div class="bg-white/20 p-2 rounded-xl mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-                </div>
-                <div class="flex-1">
-                    <h3 class="font-bold text-lg leading-tight">¿Vives en privilegio?</h3>
-                    <p class="text-xs opacity-90">Autoreflexión con el Privilegiómetro</p>
-                </div>
-            </a>
-            <span id="click-privilegiometro" class="hidden-counter">0</span>
-        </div>
+<main style="width:100%;max-width:420px;display:flex;flex-direction:column;gap:12px">
 
-        <div class="flex items-center space-x-2">
-            <a href="https://portatil.chingosdeimpacto.com" target="_blank" onclick="trackClick('ia')"
-               class="btn-impacto flex-grow p-4 rounded-2xl flex items-center bg-red-cdi text-white">
-                <div class="bg-white/20 p-2 rounded-xl mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 22v-4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M22 12h-4"/><path d="m19.07 4.93-2.83 2.83"/></svg>
-                </div>
-                <div class="flex-1">
-                    <h3 class="font-bold text-lg leading-tight">Aprende a usar la IA</h3>
-                    <p class="text-xs opacity-90">Innovación y Tech4Good aplicada</p>
-                </div>
-            </a>
-            <span id="click-ia" class="hidden-counter">0</span>
-        </div>
+  <a href="https://chimbot.chingosdeimpacto.com" target="_blank" onclick="trackClick('privilegiometro')"
+     class="btn" style="background:var(--l);color:#fff;padding:16px;border-radius:18px;display:flex;align-items:center;text-decoration:none">
+    <span class="ico">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    </span>
+    <span>
+      <strong class="ff" style="font-size:1.05rem;display:block;line-height:1.2">¿Vives en privilegio?</strong>
+      <small style="font-size:.75rem;opacity:.9">Autoreflexión con el Privilegiómetro</small>
+    </span>
+  </a>
 
-        <div class="flex items-center space-x-2">
-            <a href="https://chat.whatsapp.com/DMTkz5UDnzqHmrBuCrfE9S" target="_blank" onclick="trackClick('whatsapp')"
-               class="btn-impacto flex-grow p-4 rounded-2xl flex items-center bg-orange-cdi text-white">
-                <div class="bg-white/20 p-2 rounded-xl mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
-                </div>
-                <div class="flex-1">
-                    <h3 class="font-bold text-lg leading-tight">Grupo de WhatsApp</h3>
-                    <p class="text-xs opacity-90">Únete a nuestra comunidad de impacto</p>
-                </div>
-            </a>
-            <span id="click-whatsapp" class="hidden-counter">0</span>
-        </div>
+  <a href="https://portatil.chingosdeimpacto.com" target="_blank" onclick="trackClick('ia')"
+     class="btn" style="background:var(--r);color:#fff;padding:16px;border-radius:18px;display:flex;align-items:center;text-decoration:none">
+    <span class="ico">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4m-7.07-1.07 2.83 2.83M2 12h4m.93 7.07 2.83-2.83M12 22v-4m7.07 1.07-2.83-2.83M22 12h-4m-.93-7.07-2.83 2.83"/></svg>
+    </span>
+    <span>
+      <strong class="ff" style="font-size:1.05rem;display:block;line-height:1.2">Aprende a usar la IA</strong>
+      <small style="font-size:.75rem;opacity:.9">Innovación y Tech4Good aplicada</small>
+    </span>
+  </a>
 
-        <div class="flex items-center space-x-2">
-            <a href="https://chingos.de/medicion_impacto" target="_blank" onclick="trackClick('medicion')"
-               class="btn-impacto flex-grow p-4 rounded-2xl flex items-center bg-blue-cdi text-white">
-                <div class="bg-white/20 p-2 rounded-xl mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
-                </div>
-                <div class="flex-1">
-                    <h3 class="font-bold text-lg leading-tight">Medición de Impacto</h3>
-                    <p class="text-xs opacity-90">Descubre cómo medimos el cambio real</p>
-                </div>
-            </a>
-            <span id="click-medicion" class="hidden-counter">0</span>
-        </div>
+  <a href="https://chingos.de/medicion_impacto" target="_blank" onclick="trackClick('medicion')"
+     class="btn" style="background:var(--b);color:#fff;padding:16px;border-radius:18px;display:flex;align-items:center;text-decoration:none">
+    <span class="ico">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M19 9l-5 5-4-4-3 3"/></svg>
+    </span>
+    <span>
+      <strong class="ff" style="font-size:1.05rem;display:block;line-height:1.2">Medición de Impacto</strong>
+      <small style="font-size:.75rem;opacity:.9">Descubre cómo medimos el cambio real</small>
+    </span>
+  </a>
 
-        <div class="flex items-center space-x-2">
-            <a href="https://chingos.de/becas" target="_blank" onclick="trackClick('becas')"
-               class="btn-impacto flex-grow p-4 rounded-2xl flex items-center bg-teal-cdi text-white">
-                <div class="bg-white/20 p-2 rounded-xl mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-                </div>
-                <div class="flex-1">
-                    <h3 class="font-bold text-lg leading-tight">Becas de Licenciatura</h3>
-                    <p class="text-xs opacity-90">Consulta la convocatoria vigente</p>
-                </div>
-            </a>
-            <span id="click-becas" class="hidden-counter">0</span>
-        </div>
+  <a href="https://luma.com/user/chingos" target="_blank" onclick="trackClick('luma')"
+     class="btn" style="background:var(--o);color:#fff;padding:16px;border-radius:18px;display:flex;align-items:center;text-decoration:none">
+    <span class="ico">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+    </span>
+    <span>
+      <strong class="ff" style="font-size:1.05rem;display:block;line-height:1.2">Experiencias del mes</strong>
+      <small style="font-size:.75rem;opacity:.9">Conoce nuestros próximos eventos</small>
+    </span>
+  </a>
 
-        <div class="py-6 flex items-center">
-            <div class="flex-grow border-t border-zinc-200"></div>
-            <span class="px-4 text-[10px] uppercase tracking-[0.2em] text-zinc-400 font-bold">Corporativo</span>
-            <div class="flex-grow border-t border-zinc-200"></div>
-        </div>
+  <a href="https://chingos.de/becas" target="_blank" onclick="trackClick('becas')"
+     class="btn" style="background:var(--t);color:#fff;padding:16px;border-radius:18px;display:flex;align-items:center;text-decoration:none">
+    <span class="ico">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+    </span>
+    <span>
+      <strong class="ff" style="font-size:1.05rem;display:block;line-height:1.2">Becas de Licenciatura</strong>
+      <small style="font-size:.75rem;opacity:.9">Consulta la convocatoria vigente</small>
+    </span>
+  </a>
 
-        <div class="space-y-3">
-            <div class="flex items-center space-x-2">
-                <a href="mailto:holi@chingosdeimpacto.com" onclick="trackClick('email')" class="btn-impacto flex-grow bg-zinc-50 p-4 rounded-xl flex items-center group border border-zinc-100">
-                    <svg class="mr-3 text-red-cdi" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
-                    <span class="font-semibold text-zinc-700">Email: holi@chingosdeimpacto.com</span>
-                </a>
-                <span id="click-email" class="hidden-counter">0</span>
-            </div>
+  <!-- Divisor empresa -->
+  <div style="display:flex;align-items:center;padding:16px 0 8px">
+    <div style="flex:1;border-top:1px solid #e5e5e5"></div>
+    <span style="padding:0 14px;font-size:.65rem;text-transform:uppercase;letter-spacing:.2em;color:#aaa;font-weight:600">¿Eres empresa?</span>
+    <div style="flex:1;border-top:1px solid #e5e5e5"></div>
+  </div>
 
-            <div class="flex items-center space-x-2">
-                <a href="https://chingosdeimpacto.com" target="_blank" onclick="trackClick('web')" class="btn-impacto flex-grow bg-zinc-50 p-4 rounded-xl flex items-center justify-between group border border-zinc-100">
-                    <span class="font-semibold text-zinc-700">Página Web Oficial</span>
-                    <svg class="text-zinc-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-                <span id="click-web" class="hidden-counter">0</span>
-            </div>
+  <a href="https://voluntariado.chingosdeimpacto.com" target="_blank" onclick="trackClick('voluntariado')"
+     class="btn" style="background:var(--l);color:#fff;padding:16px;border-radius:18px;display:flex;align-items:center;text-decoration:none">
+    <span class="ico">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+    </span>
+    <span>
+      <strong class="ff" style="font-size:1.05rem;display:block;line-height:1.2">¿Tu empresa quiere generar impacto?</strong>
+      <small style="font-size:.75rem;opacity:.9">Descubre cómo</small>
+    </span>
+  </a>
 
-            <div class="flex items-center space-x-2">
-                <a href="https://canva.link/bowzvmokqv1tqhj" target="_blank" onclick="trackClick('brochure')" class="btn-impacto flex-grow bg-zinc-900 p-4 rounded-xl flex items-center justify-center space-x-2 text-white shadow-md hover:bg-black">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    <span class="font-bold">Ver Brochure</span>
-                </a>
-                <span id="click-brochure" class="hidden-counter">0</span>
-            </div>
-        </div>
-    </main>
+  <!-- Divisor corporativo -->
+  <div style="display:flex;align-items:center;padding:16px 0 8px">
+    <div style="flex:1;border-top:1px solid #e5e5e5"></div>
+    <span style="padding:0 14px;font-size:.65rem;text-transform:uppercase;letter-spacing:.2em;color:#aaa;font-weight:600">Contáctanos</span>
+    <div style="flex:1;border-top:1px solid #e5e5e5"></div>
+  </div>
 
-    <footer class="mt-16 text-center pb-12 w-full">
-        <div class="flex justify-center space-x-8 mb-8">
-            <a href="https://www.linkedin.com/company/chingosdeimpacto/" target="_blank" class="text-zinc-400 hover:text-blue-700 transition-all transform hover:scale-110">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-            <a href="https://instagram.com/chingosdeimpacto" target="_blank" class="text-zinc-400 hover:text-pink-600 transition-all transform hover:scale-110">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-            </a>
-            <a href="https://www.facebook.com/chingosdeimpacto/" target="_blank" class="text-zinc-400 hover:text-blue-600 transition-all transform hover:scale-110">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-        </div>
-        <p class="text-[10px] text-zinc-400 font-bold tracking-[0.25em] uppercase px-4">
-            © 2024 CHINGOS DE IMPACTO. <span id="footer-visits" class="ml-1">0</span>
-        </p>
-    </footer>
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <a href="https://chat.whatsapp.com/DMTkz5UDnzqHmrBuCrfE9S" target="_blank" onclick="trackClick('whatsapp')"
+       class="btn" style="background:#25d366;color:#fff;padding:16px;border-radius:18px;display:flex;align-items:center;text-decoration:none">
+      <span class="ico">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+      </span>
+      <span>
+        <strong class="ff" style="font-size:1.05rem;display:block;line-height:1.2">Grupo de WhatsApp</strong>
+        <small style="font-size:.75rem;opacity:.9">Únete a nuestra comunidad de impacto</small>
+      </span>
+    </a>
 
-    <!-- Firebase Scripts -->
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-        import { getFirestore, doc, setDoc, updateDoc, increment, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+    <a href="mailto:holi@chingosdeimpacto.com"
+       class="btn" style="background:#f8f8f8;color:#333;padding:14px 16px;border-radius:14px;display:flex;align-items:center;text-decoration:none;border:1px solid #ebebeb">
+      <svg style="margin-right:12px;color:var(--r);flex-shrink:0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#df5e52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+      <span style="font-size:.875rem;font-weight:500">holi@chingosdeimpacto.com</span>
+    </a>
 
-        const firebaseConfig = JSON.parse(__firebase_config);
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'chingos-bio-link';
-        const initialToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+    <a href="https://chingosdeimpacto.com" target="_blank"
+       class="btn" style="background:#f8f8f8;color:#333;padding:14px 16px;border-radius:14px;display:flex;align-items:center;justify-content:space-between;text-decoration:none;border:1px solid #ebebeb">
+      <span style="font-size:.875rem;font-weight:500">Página Web Oficial</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
 
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-        const db = getFirestore(app);
+    <a href="https://canva.link/bowzvmokqv1tqhj" target="_blank"
+       class="btn" style="background:#111;color:#fff;padding:14px 16px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <span style="font-size:.875rem;font-weight:600">Ver Brochure</span>
+    </a>
+  </div>
+</main>
 
-        let currentUser = null;
-        const metricsDocPath = doc(db, 'artifacts', appId, 'public', 'data', 'analytics', 'metrics');
+<footer style="margin-top:48px;padding-bottom:40px;text-align:center;width:100%">
+  <div style="display:flex;justify-content:center;gap:28px;margin-bottom:20px">
+    <a href="https://www.linkedin.com/company/chingosdeimpacto/" target="_blank" style="color:#bbb;transition:color .2s" onmouseover="this.style.color='#0a66c2'" onmouseout="this.style.color='#bbb'">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="https://instagram.com/chingosdeimpacto" target="_blank" style="color:#bbb;transition:color .2s" onmouseover="this.style.color='#e1306c'" onmouseout="this.style.color='#bbb'">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+    </a>
+    <a href="https://www.facebook.com/chingosdeimpacto/" target="_blank" style="color:#bbb;transition:color .2s" onmouseover="this.style.color='#1877f2'" onmouseout="this.style.color='#bbb'">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </a>
+  </div>
+  <p style="font-size:.65rem;color:#bbb;letter-spacing:.2em;text-transform:uppercase;font-weight:600">
+    © 2025 Chingos de Impacto
+    &nbsp;·&nbsp;
+    <span id="visit-count">...</span>
+  </p>
+  <p style="font-size:.65rem;color:#bbb;letter-spacing:.1em;font-weight:600;margin-top:4px">
+    <span id="stats-line">·-·-·-·-·-·</span>
+  </p>
+</footer>
+<script>
+const KEYS = ['privilegiometro','ia','medicion','luma','becas','whatsapp','voluntariado'];
 
-        async function initAuth() {
-            if (initialToken) {
-                await signInWithCustomToken(auth, initialToken);
-            } else {
-                await signInAnonymously(auth);
-            }
-        }
+async function getVal(key) {
+  try { const r = await window.storage.get(key); return parseInt(r.value)||0; }
+  catch(e) { return 0; }
+}
+async function incr(key) {
+  const v = await getVal(key);
+  await window.storage.set(key, String(v+1));
+  return v+1;
+}
 
-        initAuth();
+async function updateStats() {
+  const counts = await Promise.all(KEYS.map(k => getVal('click_'+k)));
+  const visits = await getVal('biolink_visits');
+  document.getElementById('stats-line').textContent = [...counts, visits].join('-');
+  document.getElementById('visit-count').textContent = visits.toLocaleString('es-MX');
+}
 
-        onAuthStateChanged(auth, async (user) => {
-            if (user) {
-                currentUser = user;
-                if (!sessionStorage.getItem('visited')) {
-                    await registerVisit();
-                    sessionStorage.setItem('visited', 'true');
-                }
-                
-                onSnapshot(metricsDocPath, (docSnap) => {
-                    if (docSnap.exists()) {
-                        updateUI(docSnap.data());
-                    } else {
-                        setDoc(metricsDocPath, { visits: 0, total_clicks: 0 });
-                    }
-                }, (error) => console.error("Error fetching stats:", error));
-            }
-        });
+(async () => {
+  const visits = await incr('biolink_visits');
+  document.getElementById('visit-count').textContent = visits.toLocaleString('es-MX');
+  await updateStats();
+})();
 
-        async function registerVisit() {
-            try {
-                await updateDoc(metricsDocPath, { visits: increment(1) });
-            } catch (e) {
-                await setDoc(metricsDocPath, { visits: 1, total_clicks: 0 }, { merge: true });
-            }
-        }
+window.trackClick = async (btnId) => {
+  await incr('click_'+btnId);
+  await updateStats();
+};
+</script>
 
-        window.trackClick = async (buttonId) => {
-            if (!currentUser) return;
-            try {
-                const updateData = { total_clicks: increment(1) };
-                updateData[`clicks_${buttonId}`] = increment(1);
-                await updateDoc(metricsDocPath, updateData);
-            } catch (e) {
-                console.error("Error tracking click:", e);
-            }
-        };
-
-        function updateUI(data) {
-            // Actualizar contador de visitas en el footer
-            const footerVisits = document.getElementById('footer-visits');
-            if (footerVisits) footerVisits.innerText = data.visits || 0;
-
-            // Actualizar contadores individuales (están en blanco sobre blanco)
-            Object.keys(data)
-                .filter(key => key.startsWith('clicks_'))
-                .forEach(key => {
-                    const buttonId = key.replace('clicks_', '');
-                    const element = document.getElementById(`click-${buttonId}`);
-                    if (element) element.innerText = data[key];
-                });
-        }
-    </script>
 </body>
 </html>
